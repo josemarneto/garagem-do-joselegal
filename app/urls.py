@@ -14,6 +14,7 @@ from rest_framework_simplejwt.views import (
 
 from core.views import (
     AcessorioViewSet,
+    CorViewSet,
     ModeloViewSet,
     UserRegistrationView,
     UserViewSet,
@@ -24,6 +25,7 @@ router = DefaultRouter()
 
 router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'veiculos', VeiculoViewSet, basename='veiculos')
+router.register(r'cores', CorViewSet, basename='cores')
 router.register(r'acessorios', AcessorioViewSet, basename='acessorios')
 router.register(r'modelos', ModeloViewSet, basename='modelos')
 
